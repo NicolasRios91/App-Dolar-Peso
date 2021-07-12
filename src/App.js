@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./models/header";
 import Form from "./models/form";
 import NewForm from "./models/newForm";
+import Footer from "./models/footer";
 import { fetchDolar } from "./api";
 function App() {
   const [data, setData] = useState(null);
@@ -41,6 +42,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 }
