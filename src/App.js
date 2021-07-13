@@ -41,8 +41,8 @@ function App() {
             <NewForm dolarValue={data[1].casa.venta}></NewForm>
           </div>
         </div>
+        <Footer></Footer>
       </div>
-      <Footer></Footer>
     </>
   );
 }

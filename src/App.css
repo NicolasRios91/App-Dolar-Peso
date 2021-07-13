@@ -1,30 +1,47 @@
 body {
-  background-image: radial-gradient(
-    circle,
-    #d0d0e3,
-    #9797b1,
-    #626282,
-    #303255,
-    #00002c
+  min-width: 360px;
+  /* background-image: radial-gradient(
+      circle,
+      #d0d0e3,
+      #9797b1,
+      #626282,
+      #303255,
+      #00002c
+    ); */
+  /* background-image: linear-gradient(
+    to right bottom,
+    #8290a4,
+    #5b98b3,
+    #00a1b0,
+    #00a894,
+    #19aa64
+  ); */
+  background-image: linear-gradient(
+    to top,
+    #8290a4,
+    #5b98b3,
+    #00a1b0,
+    #00a894,
+    #19aa64
   );
 }
 .App {
+  background-image: linear-gradient(
+    to bottom,
+    #8290a4,
+    #5b98b3,
+    #00a1b0,
+    #00a894,
+    #19aa64
+  );
+  min-width: 360px;
   width: 100%;
   margin: auto;
   text-align: center;
-  /* background-image: linear-gradient(
-    to right bottom,
-    #06250e,
-    #104a20,
-    #207332,
-    #359e43,
-    #4dcb53
-  ); */
-
-  height: 500px;
 }
 
 .main {
+  min-width: 360px;
   width: 100%;
   margin: auto;
   display: flex;
@@ -38,7 +55,8 @@ body {
 }
 
 .app-header {
-  height: 100px;
+  width: 100%;
+  /* height: 100px; */
   font-size: 1.5rem;
   font-weight: bold;
   color: black;
@@ -90,7 +108,10 @@ select {
   outline: none;
 }
 .app-footer {
+  box-sizing: border-box;
   text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
 .icon {
   width: 50px;
@@ -102,4 +123,67 @@ select {
 .icon:hover {
   transition: 0.7s;
   color: white;
+}
+@media only screen and (max-width: 750px) {
+  .app-header {
+    font-size: 1.2rem;
+  }
+  .three-blocks {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .label-left {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+  }
+  .app-footer {
+    margin-top: 20px;
+  }
+}
+
+/* @media only screen and (max-width: 500px) {
+  .app-header {
+    font-size: 1.2rem;
+  }
+  .three-blocks {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .label-left {
+    font-size: 1rem;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+} */
+@media only screen and (max-width: 500px) {
+  .app-header {
+    font-size: 1rem;
+  }
+  .three-blocks {
+    margin-top: 5px;
+    /* margin-bottom: 5px; */
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .label-left {
+    margin-top: 10px;
+    /* margin-bottom: 5px; */
+    font-size: 1rem;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
 }
