@@ -33,7 +33,7 @@ const NewForm = () => {
       <div className="three-blocks">
         <div className="label-value-pair">
           <label htmlFor="" className="label-left">
-            Cantidad
+            Quantity
           </label>
           <input
             type="text"
@@ -43,7 +43,7 @@ const NewForm = () => {
         </div>
         <div className="label-value-pair">
           <label htmlFor="" className="label-left">
-            De:
+            From:
           </label>
           <select
             name="coin"
@@ -52,12 +52,12 @@ const NewForm = () => {
             defaultValue="Pesos Argentinos"
           >
             <option value="Pesos Argentinos">Peso Argentino</option>
-            <option value="USD">Dolar Estadounidense</option>
+            <option value="USD">US Dollar</option>
           </select>
         </div>
         <div className="label-value-pair">
           <label htmlFor="" className="label-left">
-            Convertir a:
+            Convert to:
           </label>
           <select
             name="coinToConvert"
@@ -66,7 +66,7 @@ const NewForm = () => {
             onChange={(e) => dispatch(SET_COIN_TO_CONVERT(e.target.value))}
           >
             <option value="Pesos Argentinos">Peso Argentino</option>
-            <option value="USD">Dolar Estadounidense</option>
+            <option value="USD">US Dollar</option>
           </select>
         </div>
       </div>
